@@ -1,6 +1,5 @@
 package feign;
 
-import feign.gson.GsonDecoder;
 import feign.gson.GsonEncoder;
 
 /**

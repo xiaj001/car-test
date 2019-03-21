@@ -16,6 +16,7 @@
         <module>hystrix</module>
         <module>feign</module>
         <module>eureka</module>
+        <module>zuul</module>
     </modules>
 
 

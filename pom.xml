@@ -16,6 +16,7 @@
         <module>leetcode</module>
         <module>Springcloud</module>
         <module>concurrent</module>
+        <module>reactor</module>
     </modules>
 
 
@@ -27,9 +28,17 @@
         </dependency>
 
         <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.16</version>
+        </dependency>
+
+
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
+            <scope>test</scope>
         </dependency>
 
 
