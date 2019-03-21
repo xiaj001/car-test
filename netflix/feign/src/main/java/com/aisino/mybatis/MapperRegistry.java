@@ -1,4 +1,4 @@
-package mybatis;
+package com.aisino.mybatis;
 
 import java.util.HashMap;
 import java.util.Map;

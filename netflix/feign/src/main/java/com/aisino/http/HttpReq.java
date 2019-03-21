@@ -1,4 +1,4 @@
-package http;
+package com.aisino.http;
 
 import java.util.HashMap;
 import java.util.Map;

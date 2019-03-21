@@ -1,4 +1,4 @@
-package mybatis;
+package com.aisino.mybatis;
 
 import java.io.Serializable;
 import java.lang.reflect.InvocationHandler;

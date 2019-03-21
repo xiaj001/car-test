@@ -1,5 +1,6 @@
-package feign;
+package com.aisino.feign;
 
+import feign.Feign;
 import feign.gson.GsonEncoder;
 
 /**

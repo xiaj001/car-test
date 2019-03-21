@@ -1,4 +1,4 @@
-package mybatis;
+package com.aisino.mybatis;
 
 /**
  * @author: xiajun003
