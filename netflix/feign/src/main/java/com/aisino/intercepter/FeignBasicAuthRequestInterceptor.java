@@ -4,9 +4,7 @@ import com.aisino.util.SignUtils;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import java.util.Map;
 
 /**

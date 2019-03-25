@@ -1,7 +1,11 @@
 package com.aisino.config;
 
+import com.aisino.feign.MeDecoder;
 import com.aisino.intercepter.FeignBasicAuthRequestInterceptor;
 import feign.Logger;
+import feign.codec.Decoder;
+import feign.optionals.OptionalDecoder;
+import org.springframework.cloud.openfeign.support.ResponseEntityDecoder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -29,6 +33,11 @@ public class FeignConfiguration {
     @Bean
     public FeignBasicAuthRequestInterceptor basicAuthRequestInterceptor() {
         return new FeignBasicAuthRequestInterceptor();
+    }
+
+    @Bean
+    public Decoder feignDecoder(){
+        return new OptionalDecoder(new ResponseEntityDecoder(new MeDecoder()));
     }
 
 
