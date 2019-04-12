@@ -18,7 +18,7 @@ public class SignUtils {
     private static final Logger log = LoggerFactory.getLogger(SignUtils.class);
 
 
-    public static String sign(Map<String, Collection<String>> paramMap, String appkey)  {
+    public static String sign(Map<String, List<String>> paramMap, String appkey)  {
         if (paramMap == null || StringUtils.isBlank(appkey)){
             throw new IllegalArgumentException("sign param error !");
         }

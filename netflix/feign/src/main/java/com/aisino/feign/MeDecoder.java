@@ -6,6 +6,8 @@ import feign.Response;
 import feign.Util;
 import feign.codec.DecodeException;
 import feign.codec.Decoder;
+import org.springframework.util.StopWatch;
+
 import java.io.IOException;
 import java.lang.reflect.Type;
 
@@ -18,6 +20,8 @@ public class MeDecoder implements Decoder {
 
     @Override
     public Object decode(Response response, Type type) throws IOException, DecodeException, FeignException {
+        StopWatch stopWatch = new StopWatch("test");
+
         Response.Body body = response.body();
         if (body == null) {
             return null;

@@ -1,0 +1,18 @@
+feign:
+  httpclient:
+    enabled:  false
+  okhttp:
+    enabled:  true
+  client:
+      config:
+        login-service:
+          connectTimeout: 5000
+          readTimeout: 5000
+          loggerLevel: full
+          requestInterceptors:
+            - com.aisino.intercepter.FeignBasicAuthRequestInterceptor
+            - com.aisino.intercepter.FeignBasicAuthRequestInterceptor
+          decode404: false
+          decoder: com.aisino.feign.MeDecoder
+          url: http://offline.openapi.zufangzi.com
+

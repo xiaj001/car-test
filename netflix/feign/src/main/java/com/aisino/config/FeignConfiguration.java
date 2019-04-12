@@ -2,10 +2,19 @@ package com.aisino.config;
 
 import com.aisino.feign.MeDecoder;
 import com.aisino.intercepter.FeignBasicAuthRequestInterceptor;
+import feign.Client;
 import feign.Logger;
 import feign.codec.Decoder;
+import feign.codec.Encoder;
+import feign.form.spring.SpringFormEncoder;
 import feign.optionals.OptionalDecoder;
+import okhttp3.OkHttpClient;
+import org.springframework.beans.factory.ObjectFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
 import org.springframework.cloud.openfeign.support.ResponseEntityDecoder;
+import org.springframework.cloud.openfeign.support.SpringEncoder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -17,28 +26,23 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class FeignConfiguration {
 
-    /**
-     * 日志级别
-     * @return
-     */
+    @Autowired
+    private ObjectFactory<HttpMessageConverters> messageConverters;
+    // new涓�涓猣orm缂栫爜鍣紝瀹炵幇鏀寔form琛ㄥ崟鎻愪氦
     @Bean
-    Logger.Level feignLoggerLevel() {
-        return Logger.Level.FULL;
+    public Encoder feignFormEncoder() {
+        return new SpringFormEncoder(new SpringEncoder(messageConverters));
     }
 
-    /**
-     * 创建Feign请求拦截器，在发送请求前设置认证的token,各个微服务将token设置到环境变量中来达到通用
-     * @return
-     */
-    @Bean
-    public FeignBasicAuthRequestInterceptor basicAuthRequestInterceptor() {
-        return new FeignBasicAuthRequestInterceptor();
-    }
 
     @Bean
-    public Decoder feignDecoder(){
-        return new OptionalDecoder(new ResponseEntityDecoder(new MeDecoder()));
+    public okhttp3.OkHttpClient okHttpClient(){
+        OkHttpClient client = new OkHttpClient.Builder()
+                .addInterceptor(new OKhttpInterceptor())
+                .build();
+        return client;
     }
+
 
 
 }
