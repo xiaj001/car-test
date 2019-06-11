@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Premain-Class: org.dkimi.DkimiBootstrap
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+Boot-Class-Path: dkimi-agent.jar
+

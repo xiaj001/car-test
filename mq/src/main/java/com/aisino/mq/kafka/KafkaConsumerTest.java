@@ -13,7 +13,7 @@ import java.util.Properties;
 public class KafkaConsumerTest {
     public static void main(String[] args){
         Properties props = new Properties();
-        props.put("bootstrap.servers", "10.33.108.39:9092");
+        props.put("bootstrap.servers", "10.26.9.64:9092");
         props.put("group.id", "mytest");
         props.put("enable.auto.commit", "true");
         props.put("auto.commit.interval.ms", "1000");

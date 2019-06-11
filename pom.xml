@@ -17,6 +17,9 @@
         <module>Springcloud</module>
         <module>concurrent</module>
         <module>reactor</module>
+        <module>dkimi</module>
+        <module>agent-demo</module>
+        <module>agent-test</module>
     </modules>
 
 

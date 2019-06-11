@@ -11,7 +11,6 @@ feign:
           loggerLevel: full
           requestInterceptors:
             - com.aisino.intercepter.FeignBasicAuthRequestInterceptor
-            - com.aisino.intercepter.FeignBasicAuthRequestInterceptor
           decode404: false
           decoder: com.aisino.feign.MeDecoder
           url: http://offline.openapi.zufangzi.com

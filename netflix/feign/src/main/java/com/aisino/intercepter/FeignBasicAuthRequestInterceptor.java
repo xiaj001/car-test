@@ -1,6 +1,8 @@
 package com.aisino.intercepter;
 
 import com.aisino.util.SignUtils;
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.TypeReference;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import org.springframework.util.CollectionUtils;
@@ -25,6 +27,17 @@ public class FeignBasicAuthRequestInterceptor implements RequestInterceptor {
 
     @Override
     public void apply(RequestTemplate requestTemplate) {
+        byte[] body = requestTemplate.body();
+        System.err.println(new String(body));
+        byte[] body1 = requestTemplate.body();
+        System.err.println(new String(body1));
+        String s = requestTemplate.bodyTemplate();
+
+        Map<String, String> mapParam = JSONObject.parseObject(new String(body), new TypeReference<Map<String, String>>(){});
+        System.err.println(mapParam);
+        System.err.println(s);
+        RequestTemplate requestTemplate1 = requestTemplate.bodyTemplate(null);
+        System.err.println(requestTemplate1);
         Map<String, List<String>> queryParam = getQueryParam(new String(requestTemplate.body()));
         String signCode = SignUtils.sign(queryParam, "ZYPIKel02f8u1LrKAj+bkw==");
         requestTemplate.query("signCode",signCode);

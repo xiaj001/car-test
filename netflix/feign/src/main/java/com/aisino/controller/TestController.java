@@ -4,6 +4,7 @@ import com.aisino.feign.LoginRep;
 import com.aisino.feign.LoginReqDTO;
 import com.aisino.feign.LoginService;
 import com.aisino.feign.Response;
+import com.aisino.springevent.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.util.LinkedMultiValueMap;
@@ -32,7 +33,7 @@ public class TestController {
 
     @RequestMapping("test")
     public LoginRep test(LoginReqDTO reqDTO){
-        System.err.println(reqDTO);
+        //System.err.println(reqDTO);
         LoginReqDTO loginReqDTO = new LoginReqDTO();
         loginReqDTO.setAppId("test.zufangzi.com");
         loginReqDTO.setMt(System.currentTimeMillis());
@@ -44,7 +45,7 @@ public class TestController {
         loginReqDTO1.setMt(System.currentTimeMillis());
         loginReqDTO1.setUserName("BY00133");
         loginReqDTO1.setPassword("111111");
-        loginReqDTO.setLoginReqDTO(loginReqDTO1);
+        //loginReqDTO.setLoginReqDTO(loginReqDTO1);
 
 
 
@@ -61,5 +62,13 @@ public class TestController {
 
         //LoginRep resp = loginService.login2("test.zufangzi.com",System.currentTimeMillis(),"BY00133","111111");
         return resp;
+    }
+
+    @Autowired
+    UserService userService;
+    @RequestMapping("/register")
+    public String register(){
+        userService.register("kirito");
+        return "success";
     }
 }

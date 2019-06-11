@@ -10,7 +10,7 @@ import java.util.Random;
 public class KafkaProducerTest {
     public static void main(String[] args){
         Properties props = new Properties();
-        props.put("bootstrap.servers", "10.33.108.39:9092");
+        props.put("bootstrap.servers", " 10.26.9.64:9092");
         props.put("acks", "all");
         props.put("retries", 0);
         props.put("batch.size", 16384);

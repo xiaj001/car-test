@@ -2,10 +2,4 @@
 server:
   port: 8080
 
-com:
-  test:
-    name: xiaj
-    jobs:
-    - Host
-    - jobId:  2
-      jobName: jobName
+

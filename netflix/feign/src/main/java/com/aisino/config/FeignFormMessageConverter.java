@@ -18,7 +18,7 @@ import java.util.Map;
  * @Date: 2019/4/3 17:10
  * @Description:
  */
-@Component
+//@Component
 public class FeignFormMessageConverter implements HttpMessageConverter {
 
 

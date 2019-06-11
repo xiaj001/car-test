@@ -21,10 +21,11 @@ import java.util.Map;
 @FeignClient(name ="login-service",url = "${feign.client.config.login-service.url}")
 public interface LoginService {
 
-    @RequestMapping(method = RequestMethod.POST,value = "/user/login",
-            /*produces =  MediaType.APPLICATION_JSON_VALUE,*/
-            consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
-    LoginRep login( LoginReqDTO loginReqDTO);
+    @RequestMapping(method = RequestMethod.POST,value = "/user/login",headers = "Content-Type:application/x-www-form-urlencoded"
+            /*,produces =  MediaType.APPLICATION_JSON_VALUE,
+            consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE*/
+    )
+    LoginRep login(@RequestBody LoginReqDTO loginReqDTO);
 
     @RequestMapping(method = RequestMethod.POST,value = "/user/login",
             produces =  MediaType.APPLICATION_JSON_VALUE,
