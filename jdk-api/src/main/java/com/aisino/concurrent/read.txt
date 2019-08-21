@@ -1,0 +1,150 @@
+1、在java中守护线程和本地线程区别？
+
+2、线程与进程的区别？
+
+3、什么是多线程中的上下文切换？
+
+4、死锁与活锁的区别，死锁与饥饿的区别？
+
+5、Java中用到的线程调度算法是什么？
+
+6、什么是线程组，为什么在Java中不推荐使用？
+
+7、为什么使用Executor框架？
+
+8、在Java中Executor和Executors的区别？
+
+9、如何在Windows和Linux上查找哪个线程使用的CPU时间最长？
+
+10、什么是原子操作？在Java Concurrency API中有哪些原子类(atomic classes)？
+
+11、Java Concurrency API中的Lock接口(Lock interface)是什么？对比同步它有什么优势？
+
+12、什么是Executors框架？
+
+13、什么是阻塞队列？阻塞队列的实现原理是什么？如何使用阻塞队列来实现生产者-消费者模型？
+
+14、什么是Callable和Future?
+
+15、什么是FutureTask?使用ExecutorService启动任务。
+
+16、什么是并发容器的实现？
+
+17、多线程同步和互斥有几种实现方法，都是什么？
+
+18、什么是竞争条件？你怎样发现和解决竞争？
+
+附：java并发编程学习导图
+
+19、你将如何使用thread dump？你将如何分析Thread dump？
+
+20、为什么我们调用start()方法时会执行run()方法，为什么我们不能直接调用run()方法？
+
+21、Java中你怎样唤醒一个阻塞的线程？
+
+22、在Java中CycliBarriar和CountdownLatch有什么区别？
+
+23、什么是不可变对象，它对写并发应用有什么帮助？
+
+24、什么是多线程中的上下文切换？
+
+25、Java中用到的线程调度算法是什么？
+
+26、什么是线程组，为什么在Java中不推荐使用？
+
+27、为什么使用Executor框架比使用应用创建和管理线程好？
+
+28、java中有几种方法可以实现一个线程？
+
+29、如何停止一个正在运行的线程？
+
+30、notify()和notifyAll()有什么区别？
+
+31、什么是Daemon线程？它有什么意义？
+
+32、java如何实现多线程之间的通讯和协作？
+
+33、什么是可重入锁（ReentrantLock）？
+
+34、当一个线程进入某个对象的一个synchronized的实例方法后，其它线程是否可进入此对象的其它方法？
+
+35、乐观锁和悲观锁的理解及如何实现，有哪些实现方式？
+
+36、SynchronizedMap和ConcurrentHashMap有什么区别？
+
+37、CopyOnWriteArrayList可以用于什么应用场景？
+
+38、什么叫线程安全？servlet是线程安全吗?
+
+39、volatile有什么用？能否用一句话说明下volatile的应用场景？
+
+40、为什么代码会重排序？
+
+41、在java中wait和sleep方法的不同？
+
+43、一个线程运行时发生异常会怎样？
+
+44、如何在两个线程间共享数据？
+
+45、Java中notify 和 notifyAll有什么区别？
+
+46、为什么wait, notify 和 notifyAll这些方法不在thread类里面？
+
+47、什么是ThreadLocal变量？
+
+48、Java中interrupted 和 isInterrupted方法的区别？
+
+49、为什么wait和notify方法要在同步块中调用？
+
+50、为什么你应该在循环中检查等待条件?
+
+51、Java中的同步集合与并发集合有什么区别？
+
+52、什么是线程池？ 为什么要使用它？
+
+53、怎么检测一个线程是否拥有锁？
+
+54、你如何在Java中获取线程堆栈？
+
+55、JVM中哪个参数是用来控制线程的栈堆栈小的?
+
+56、Thread类中的yield方法有什么作用？
+
+57、Java中ConcurrentHashMap的并发度是什么？
+
+58、Java中Semaphore是什么？
+
+59、Java线程池中submit() 和 execute()方法有什么区别？
+
+60、什么是阻塞式方法？
+
+61、Java中的ReadWriteLock是什么？
+
+62、volatile 变量和 atomic 变量有什么不同？
+
+63、可以直接调用Thread类的run ()方法么？
+
+64、如何让正在运行的线程暂停一段时间？
+
+65、你对线程优先级的理解是什么？
+
+66、什么是线程调度器(Thread Scheduler)和时间分片(Time Slicing )？
+
+67、你如何确保main()方法所在的线程是Java 程序最后结束的线程？
+
+68、线程之间是如何通信的？
+
+69、为什么线程通信的方法wait(), notify()和notifyAll()被定义在Object 类里？
+
+70、为什么wait(), notify()和notifyAll ()必须在同步方法或者同步块中被调用？
+
+71、为什么Thread类的sleep()和yield ()方法是静态的？
+
+72、如何确保线程安全？
+
+73、同步方法和同步块，哪个是更好的选择？
+
+74、如何创建守护线程？
+
+75、什么是Java Timer 类？如何创建一个有特定时间间隔的任务？
+
