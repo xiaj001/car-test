@@ -15,11 +15,10 @@
         <module>car-web</module>
         <module>leetcode</module>
         <module>Springcloud</module>
-        <module>concurrent</module>
+        <module>jdk-api</module>
         <module>reactor</module>
         <module>dkimi</module>
         <module>agent-demo</module>
-        <module>agent-test</module>
     </modules>
 
 
