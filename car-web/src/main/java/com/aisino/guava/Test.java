@@ -1,4 +1,4 @@
-package com.aisino.netfix.ribbon;
+package com.aisino.guava;
 
 import com.google.common.base.Joiner;
 import com.google.common.base.Objects;

@@ -1,7 +1,9 @@
 package com.aisino.feign;
 
 
-import feign.*;
+import feign.Feign;
+import feign.Param;
+import feign.RequestLine;
 
 public final class Example {
 

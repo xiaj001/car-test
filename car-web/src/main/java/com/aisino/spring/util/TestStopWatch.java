@@ -1,4 +1,4 @@
-package com.aisino.test;
+package com.aisino.spring.util;
 
 import org.springframework.util.StopWatch;
 

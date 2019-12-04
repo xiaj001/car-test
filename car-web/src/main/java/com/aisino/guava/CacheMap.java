@@ -1,4 +1,4 @@
-package com.aisino.netfix.ribbon;
+package com.aisino.guava;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;

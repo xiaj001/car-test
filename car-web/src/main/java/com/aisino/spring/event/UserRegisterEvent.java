@@ -1,4 +1,4 @@
-package com.aisino.springevent;
+package com.aisino.spring.event;
 
 import org.springframework.context.ApplicationEvent;
 
@@ -9,7 +9,7 @@ import org.springframework.context.ApplicationEvent;
  */
 public class UserRegisterEvent extends ApplicationEvent {
 
-    public UserRegisterEvent(String source) {
+    public UserRegisterEvent(Object source) {
         super(source);
     }
 }

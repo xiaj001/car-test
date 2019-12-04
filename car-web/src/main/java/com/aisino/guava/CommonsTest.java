@@ -1,13 +1,9 @@
-package com.aisino.netfix.ribbon;
+package com.aisino.guava;
 
-import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;
-import com.google.common.collect.ImmutableList;
-import com.google.common.collect.Lists;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.DateUtils;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 

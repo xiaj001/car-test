@@ -1,4 +1,4 @@
-package com.aisino.thread;
+package com.aisino.concurrent.thread;
 
 import java.util.Timer;
 import java.util.TimerTask;
