@@ -1,4 +1,3 @@
-/*
 package com.aisino.netfix.ribbon;
 import java.net.URI;
 import com.netflix.client.ClientFactory;
@@ -19,7 +18,7 @@ public class RibbonMain {
 
         for(int i = 0; i < 4; i ++) {
             HttpResponse response = client.executeWithLoadBalancer(request);
-            System.out.println("Status for URI:" + response.getRequestedURI() + " is :" + response.getStatus());
+            System.err.println("Status for URI:" + response.getRequestedURI() + " is :" + response.getStatus());
         }
 
         ZoneAwareLoadBalancer lb = (ZoneAwareLoadBalancer) client.getLoadBalancer();
@@ -39,4 +38,3 @@ public class RibbonMain {
 
 
 }
-*/
