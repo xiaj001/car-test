@@ -1,8 +1,6 @@
-package com.aisino.leetcode92;
+package com.aisino.leetcode092;
 
 import com.aisino.entry.list.ListNode;
-
-import java.util.List;
 
 /**
  * @author: xiajun003

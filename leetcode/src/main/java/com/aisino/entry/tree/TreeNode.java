@@ -24,6 +24,15 @@ public class TreeNode<T> {
     }
 
 
+    public TreeNode minNode (){
+        TreeNode node = this;
+        while (node != null && node.left != null){
+            node = node.left;
+        }
+        return node;
+    }
+
+
     /**
      * 二叉搜索树的查找
      * @param val
@@ -70,6 +79,25 @@ public class TreeNode<T> {
     public List<T> preOrderTraversal() {
         List<T> list = new ArrayList();
         preOrderReverse(list,this);
+        return list;
+    }
+
+    public List<T> preOrderTraversalV2() {
+        List<T> list = new ArrayList();
+        Stack<T> stack = new Stack();
+        TreeNode<T> node = this;
+        while (node != null && stack.size() > 0){
+            list.add(node.val);
+
+
+        }
+
+
+
+
+
+
+
         return list;
     }
 

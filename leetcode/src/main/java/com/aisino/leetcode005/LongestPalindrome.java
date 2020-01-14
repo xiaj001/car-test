@@ -1,4 +1,4 @@
-package com.aisino.leetcode05;
+package com.aisino.leetcode005;
 
 /**
  * @author jun.xia

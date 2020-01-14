@@ -1,4 +1,4 @@
-package com.aisino.leetcode01;
+package com.aisino.leetcode001;
 
 
 import com.google.common.primitives.Ints;

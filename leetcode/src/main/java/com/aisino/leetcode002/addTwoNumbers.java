@@ -1,4 +1,4 @@
-package com.aisino.leetcode02;
+package com.aisino.leetcode002;
 
 import org.junit.Test;
 
